@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Sittie Angela Maronsing -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela.</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/9898da6a9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <!-- Page Icon -->
+    <link href="images/icon.jpg" rel="icon">
+    <!-- JavaScript for Returning Form Entries -->
+    <script>
+        function printQuery() {
+          var query = window.location.search.substring(1);
+          var vars = query.split("&");
+    
+          for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            document.write(pair[0] + ": " + pair[1] + "<br />");
+          }
+        }
+      </script>
+</head>
+
+<body>
+    <!-- Consistent Part START -->
+    <h1 style="text-align: center;"> Angela Maronsing </h1>
+    <!-- Icons for Aesthetic Purpose Only -->
+    <i class="fa-solid fa-circle" style="color: rgb(255, 104, 104);"></i>
+    <i class="fa-solid fa-circle" style="color: rgb(255, 228, 94);"></i>
+    <i class="fa-solid fa-circle" style="color: rgb(124, 203, 78);"></i>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html"> About Me </a> |
+            <a href="education.html"> Education </a> |
+            <a href="projects.html"> Projects </a> |
+            <a href="contact.html"> Contact Me </a>
+        </nav>
+    <!-- Consistent Part END -->    
+        <section class="about-me content">
+            <div class="about-content">
+                <img src="images/me.jpg" alt="Picture of Me" class="about-img">
+                <div class="about-text">
+                    <h2> Angela Maronsing </h2>
+                    <p> My name is Angela Maronsing — a dedicated student with a passion for Web Development. I enjoy
+                        playing video games, exploring new places, or learning new skills. With a curious mind and a
+                        love for collaboration, I'm always open to new ideas and meaningful connections! </p>
+                </div>
+            </div>
+            <div class="contact-details">
+                <ul>
+                    <li><a href="mailto:am1013853@otc.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="tel:4175901275" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li><a href="https://www.facebook.com/sittiemaronsing5" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/sittieee" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.x.com/@sittieee_" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <h2> Thank You! </h2>
+            <p> I appreciate you for reaching out. I'll get back to you as soon as possible. Here's what we received: </p>
+            <fieldset>
+                <script>
+                  printQuery();
+                </script>
+              </fieldset>
+        </section>
+        <footer>
+            <p style="text-align: center;"> &copy; 2024 Angela Maronsing |
+                Any inquiries? Feel free to reach out here:
+                <a href="mailto:am1013853@otc.edu" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:4175901275" target="_blank"><i class="fa-solid fa-phone-volume"></i></a>
+                <a href="https://www.facebook.com/sittiemaronsing5" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/sittieee" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.x.com/@sittieee_" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
